@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <title>News Letter by gaurav</title>
+        <style>
+            * {font-size:40px;}
+            body { background-color:azure; }
+            .btn { width:30%; margin-right:40;
+                    border-radius:30px; }
+        </style>
+    </head>
+    <body>
+        <center>
+            <h1>News Letter </h1>
+            <form method="POST">
+                <input type="email" name="email" placeholder="enter email" required/>
+                <br><br>
+                <input type="submit" name="sub" value="Subscribe" class="btn"/>
+                <input type="submit" name="unsub" value="UnSubscribe" class="btn"/>
+                
+            </form>
+            {{ msg }}
+        </center>
+    </body>
+</html>
