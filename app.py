@@ -27,7 +27,7 @@ def home():
                 cursor.execute(sql%(email))
                 con.commit()
                 msg = Message('Hello',sender = 'grvbnkr@gmail.com',recipients=[email])
-                msg.body = 'Hello from kamal classes Welcome onboard'
+                msg.body = 'Hello from Django classes Welcome onboard'
                 mail.send(msg)
                 return render_template("home.html",msg="Congrats")
             except Exception as e:
